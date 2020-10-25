@@ -12,12 +12,15 @@ void draw_gate();
 void place_camera(int);
 void set_material(int material);
 
-const int SKY_FRONT=0,SKY_RIGHT=1,SKY_LEFT=2,SKY_BACK=3,SKY_UP=4,SKY_DOWN=5, GWHEEL_RING=3,GWHEEL_TROLLEY=4, GWHEEL_TOP=5;
-int sp=-1,incr=0,gate=0,dir=0,change=0,dirchange=0,num=12,num2=8,prevx=0,camw=0, background=0, gw=0, gwheel_ring_color=0, gwheel_trolley_color=0,ground = 0;
-float tx=0;
-GLint skybox[6], grass,help=0,x_r=0, y_r=0, z_r=0;
-GLfloat viewer[3] = {1.0f, 0.0f, 0.0f},camera[3] = {0.0f, 0.0, 0.0};
-GLdouble curr=0, prev=0,gw_spin = 0.0,angle=0.0,gw_width = 8.0, gw_radius=45.0,gw_x=-180.0, gw_y=50.0, gw_z=220.0,gy=0,movcord[3]={-150,-10,200};
+const int SKY_FRONT = 0, SKY_RIGHT = 1, SKY_LEFT = 2, SKY_BACK = 3,SKY_UP = 4,SKY_DOWN = 5, GWHEEL_RING = 3,
+GWHEEL_TROLLEY=4, GWHEEL_TOP=5;
+int sp = -1, incr = 0, gate = 0, dir = 0, change = 0, dirchange = 0, num = 12, num2 = 8, prevx = 0, camw = 0, background = 0,
+gw = 0, gwheel_ring_color = 0, gwheel_trolley_color = 0, ground = 0;
+float tx = 0;
+GLint skybox[6], grass, help = 0, x_r = 0, y_r = 0, z_r = 0;
+GLfloat viewer[3] = {1.0f, 0.0f, 0.0f}, camera[3] = {0.0f, 0.0, 0.0};
+GLdouble curr = 0, prev = 0, gw_spin = 0.0,angle = 0.0, gw_width = 8.0, gw_radius = 45.0, gw_x= -180.0, gw_y=50.0,
+gw_z=220.0 , gy = 0, movcord[3] = {-150,-10,200};
 
 void draw_cyl(float x1, float y1, float z1, float x2,float y2, float z2, float radius,int subdivisions);
 
